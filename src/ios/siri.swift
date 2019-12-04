@@ -13,16 +13,16 @@ import IntentsUI
   @objc(donate:) func donate(_ command: CDVInvokedUrlCommand) {
       self.commandDelegate!.run(inBackground: {
           if #available(iOS 12.0, *) {
-              var activityParams = [
-                "persistentIdentifier": "open-my-app",
-                "title": "Open my app",
-                "suggestedInvocationPhrase": "Open my app",
-                "isEligibleForSearch": true,
-                "isEligibleForPrediction": true,
-                ] 
+              // var activityParams = [
+              //   "persistentIdentifier": "open-my-app",
+              //   "title": "Open my app",
+              //   "suggestedInvocationPhrase": "Open my app",
+              //   "isEligibleForSearch": true,
+              //   "isEligibleForPrediction": true,
+              //   ] 
 
-              // self.activity = self.createUserActivity(from: command, makeActive: true)
-              self.activity = self.createUserActivity(from: activityParams, makeActive: true)
+              self.activity = self.createUserActivity(from: command, makeActive: true)
+              // self.activity = self.createUserActivity(from: activityParams, makeActive: true)
 
               // tell Cordova we're all OK
               self.sendStatusOk(command)
