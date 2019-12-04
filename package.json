@@ -1,5 +1,5 @@
 {
-  "name": "Siri",
+  "name": "siri",
   "version": "0.0.1",
   "description": "Plugin siri para iOS",
   "cordova": {
