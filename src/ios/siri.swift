@@ -9,7 +9,7 @@
      * Even if in this example, it can't.
      */
     // Set the plugin result to fail.
-    var pluginResult = CDVPluginResult (status: CDVCommandStatus_ERROR, messageAs: "The Plugin Failed");
+    var pluginResult = CDVPluginResult (status: CDVCommandStatus_ERROR, messageAs: "El plugin funciona pero peta");
     // Set the plugin result to succeed.
     pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: "El plugin funciona");
     // Send the function result back to Cordova.
