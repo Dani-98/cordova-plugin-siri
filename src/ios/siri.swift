@@ -38,7 +38,7 @@ import IntentsUI
   func createUserActivity(from command: CDVInvokedUrlCommand, makeActive: Bool) -> NSUserActivity? {
       if #available(iOS 12.0, *) {
           // corresponds to the NSUserActivityTypes
-          guard let activityName = SiriShortcuts.getActivityName() else { return nil }
+          guard let activityName = siri.getActivityName() else { return nil }
 
           // extract all features
           guard let persistentIdentifier = command.arguments[0] as? String else { return nil }
@@ -113,6 +113,15 @@ import IntentsUI
           pluginResult,
           callbackId: command.callbackId
       )
+  }
+
+  public static func getActivityName() -> String? {
+      guard let identifier = Bundle.main.bundleIdentifier else { return nil }
+
+      // corresponds to the NSUserActivityTypes
+      let activityName = identifier + ".shortcut"
+
+      return activityName
   }
 
 
