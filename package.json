@@ -1,18 +1,21 @@
 {
-    "name": "siri",
-    "version": "0.0.1",
-    "description": "Plugin siri para iOS",
-    "cordova": {
-      "id": "cordova-plugin-siri",
-      "platforms": [
-        "ios"
-      ]
-    },
-    "keywords": [
-      "cordova",
-      "ecosystem:cordova",
-      "cordova-ios"
-    ],
-    "author": "it",
-    "license": "MIT"
+  "name": "siri",
+  "version": "0.0.1",
+  "description": "Plugin siri para iOS",
+  "cordova": {
+    "id": "cordova-plugin-siri",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "it",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^8.1.0"
   }
+}
