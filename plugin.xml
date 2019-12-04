@@ -25,7 +25,7 @@
         <!-- <header-file src="src/ios/AppDelegate+Siri.h" /> -->
 
         <source-file src="src/ios/siri.swift" />
-        <!-- <source-file src="src/ios/ActivityDataHolder.swift" /> -->
+        <source-file src="src/ios/ActivityDataHolder.swift" />
         <!-- <source-file src="src/ios/UserActivityDelegate.swift" />
         <source-file src="src/ios/AppDelegate+Siri.m" />-->
         <source-file src="src/ios/ShortcutPresentedDelegate.swift" />
